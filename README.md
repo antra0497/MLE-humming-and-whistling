@@ -79,3 +79,6 @@ Advanced solution :
 
 - Unsupervised Gender Classification using hierarcial clustering based on mfcc feature of the audio files.
 SVM Model:
+_Referenced Paper: Gender Identification using MFCC for Telephone Applications – A Comparative Study
+
+Common approaches for gender recognition are based on the analysis of pitch of the speech. However, gender recognition using a single feature is not sufficiently accurate for a large variety of speakers. To capture differences in both time domain and frequency domain, a set of features known as Mel-frequency cepstrum coefficients (MFCC) are used. These are widely used state-of-the-art features for automatic speech and speaker recognition. MFCC features are extracted from speech signals over a small window of 20 to 40 milliseconds. These features are also known to work efficiently in noisy environments. Due to their robust nature, they are widely used in speaker recognition tasks
