@@ -33,9 +33,49 @@ We will record two types of interpretations of the above mentioned songs:
 
 There is no right or wrong way of humming or whistling to a song. When recording ourself, we just hum or whistle as you would normally do (da-da-da, la-la-la, hm-hm-hm, ti-ro-ri, pa-rapa…). We did not sing the lyrics.
 
+---
+
 ### Jupyter Notebooks
-Basic solution :
+**Basic solution :**
 > Using the MLEnd Hums and Whistles dataset, build a machine learning pipeline that takes as an input a Potter or a StarWars audio segment and predicts its song label (either Harry or StarWars).
 
+**Underline Steps:**
+- Importing required python libraries
+- Data Cleaning Function
+- Reading and processing Harry Potter and Starwars audio files
+- Merging and creating final dataframe
+- Feature Extraction from the audio: Power, Pitch Mean, Pitch Std., Voice Frame, Interpretation Label, Song Label
+- Data Exploration, Data Normalization, Data Split
+- Dummy check for Humming and whistling classification.
+- Model 1: SVM classifier for classifying Harry Potter or Starwars files
+- Analysing the results:
+
+  ![image](https://user-images.githubusercontent.com/25953832/164483306-33af3861-cb22-4263-ba66-43ca32d164bf.png)
+
+   - Training Accuracy: 0.6840277777777778
+   - Validation Accuracy: 0.5874439461883408
+   - Testing Accuracy:0.56 
+   
+We can improve the model by including advance features of adio processing like ```mfcc, chroma, melody (to be included in the advance solution)```
+
 Advanced solution : 
-> Formulate a machine learning problem that can be attempted using the MLEnd Hums and Whistles dataset and build a solution model.
+> An advanced Machine Learning solution to identify different audio files 
+
+**Underline Steps:**
+- Data Processing of 7 songs
+- Feature Extractions: Previously we used following features from the audio data:
+> Power, Pitch Mean, Pitch Std., Voice Frame, Interpretation Label, Song Label
+- Advance features which we have added are:
+>  MFFC, Chroma, Mel-fre, Contrast
+- Feature scaling using z-scoreS
+- Model 1: Modified SVM Model
+> - Training Accuracy 0.5252725470763132
+> - Validation  Accuracy 0.38125802310654683
+> - Testing Accuracy 0.39080459770114945
+- Model 2: CNN
+> - Training Accuracy:  0.9856293201446533
+> - Validation Accuracy:  0.43132221698760986
+> - Testing Accuracy 0.41379310344827586
+
+- Unsupervised Gender Classification using hierarcial clustering based on mfcc feature of the audio files.
+SVM Model:
