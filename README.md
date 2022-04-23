@@ -35,7 +35,7 @@ There is no right or wrong way of humming or whistling to a song. When recording
 
 ---
 
-### Jupyter Notebooks
+## Jupyter Notebooks
 **Basic solution :**
 > Using the MLEnd Hums and Whistles dataset, build a machine learning pipeline that takes as an input a Potter or a StarWars audio segment and predicts its song label (either Harry or StarWars).
 
@@ -49,9 +49,6 @@ There is no right or wrong way of humming or whistling to a song. When recording
 - Dummy check for Humming and whistling classification.
 - Model 1: SVM classifier for classifying Harry Potter or Starwars files
 - Analysing the results:
-
-  ![image](https://user-images.githubusercontent.com/25953832/164483306-33af3861-cb22-4263-ba66-43ca32d164bf.png)
-
    - Training Accuracy: 0.6840277777777778
    - Validation Accuracy: 0.5874439461883408
    - Testing Accuracy:0.56 
@@ -78,7 +75,6 @@ Advanced solution :
 > - Testing Accuracy 0.41379310344827586
 
 - Unsupervised Gender Classification using hierarcial clustering based on mfcc feature of the audio files.
-SVM Model:
-_Referenced Paper: Gender Identification using MFCC for Telephone Applications – A Comparative Study
+SVM Model: _Referenced Paper: Gender Identification using MFCC for Telephone Applications – A Comparative Study
 
 Common approaches for gender recognition are based on the analysis of pitch of the speech. However, gender recognition using a single feature is not sufficiently accurate for a large variety of speakers. To capture differences in both time domain and frequency domain, a set of features known as Mel-frequency cepstrum coefficients (MFCC) are used. These are widely used state-of-the-art features for automatic speech and speaker recognition. MFCC features are extracted from speech signals over a small window of 20 to 40 milliseconds. These features are also known to work efficiently in noisy environments. Due to their robust nature, they are widely used in speaker recognition tasks
